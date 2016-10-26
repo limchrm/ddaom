@@ -1,7 +1,7 @@
 # 따옴 DDAOM
 ##### 삶에 작은 힘이 되는 말들, 새 탭을 열 때마다 랜덤으로 보여 줍니다.
 
-<img src="preview.jpg" style="width: 100%">
+<img src="https://github.com/limchrm/ddaom-new/raw/master/preview.jpg" style="width: 100%">
 
 따옴은 삶에 작은 힘이 되는 '말'들을
 새 탭을 열 때마다 랜덤으로 보여 줍니다.
@@ -15,3 +15,10 @@
 #### [크롬 웹스토어에서 설치하기](https://chrome.google.com/webstore/detail/%EB%94%B0%EC%98%B4/jghdlfphhceakekbhfdoohoaoomhgoac)
 
 #### ['말' 제보하기](https://goo.gl/FpI6us)
+
+- - -
+
+###PURPOSE OF THIS REPOSITORY
+- to convert AngularJS to TypeScript
+- to store & manage version of codes
+- to learn Git & TypeScript
