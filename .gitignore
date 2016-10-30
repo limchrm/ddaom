@@ -1,2 +1,3 @@
-/img
-/etc
+node_modules
+original/img
+original/etc
