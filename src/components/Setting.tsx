@@ -1,5 +1,5 @@
 import * as React from 'react';
-import className from 'classnames';
+import * as className from 'classnames';
 
 class Setting extends React.Component<any, any> {
   public render() {

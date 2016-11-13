@@ -1,0 +1,20 @@
+#clock {
+  @include fixedComponent;
+  top: 2.5rem;
+  font-weight: bold;
+  animation: fadein 1.5s;
+}
+.clockTime {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+.clockDivider {
+  animation: blink 1.2s infinite;
+  position: relative;
+  top: -0.125rem;
+}
+.clockDate {
+  font-size: 0.875rem;
+  letter-spacing: 0.075rem;
+}

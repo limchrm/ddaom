@@ -1,22 +1,24 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import * as classNames from 'classnames';
 
-class Quote extends React.Component<any, any> {
-  public render() {
-    return (
-      <section id="quote">
-        <div id="bg">
-          <div className="dim"></div>
-          <div className="wrap-quote">
-            <span className="quote-mark">“</span>
-            <pre className="quote-text">명언</pre>
-            <p className="quote-from">출처1<u>출처2</u></p>
-            <img className="quote-reload" />
-          </div>
-        </div>
-      </section>
-    );
-  }
+interface QuoteProps {
+  text: string;
+  from1: string;
+  from2: string;
 }
+
+const Quote: React.StatelessComponent<QuoteProps> = ({ text, from1, from2 }) => (
+  <section id="quote">
+    <div className="dim"></div>
+    <div className="quoteCard">
+      <span className="quoteMark">“</span>
+      <pre className="quoteText">{text}</pre>
+      <div className="quoteFrom">
+        <span className="quoteFrom1">{from1}</span>
+        <span className="quoteFrom2">{from2}</span>
+      </div>
+    </div>
+  </section>
+);
 
 export default Quote;

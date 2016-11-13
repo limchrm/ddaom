@@ -1,5 +1,3 @@
-/// <reference path="../interfaces.d.ts" />
-
 import * as React from 'react';
 
 const weekdays = ['일', '월', '화', '수', '목', '금', '토'];
@@ -28,9 +26,13 @@ class Clock extends React.Component<any, any> {
 
   public render() {
     return (
-      <header>
-        <p>{this.state.hours}:{this.state.minutes}</p>
-        <p>{this.state.month}. {this.state.date}. {weekdays[this.state.weekday]}</p>
+      <header id="clock">
+        <p className="clockTime">
+          {this.state.hours}
+          <span className="clockDivider">:</span>
+          {this.state.minutes}
+        </p>
+        <p className="clockDate">{this.state.month}. {this.state.date}. {weekdays[this.state.weekday]}</p>
       </header>
     );
   }

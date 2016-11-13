@@ -1,24 +1,46 @@
 import * as React from 'react';
+import * as classNames from 'classnames';
 
-class Footer extends React.Component<any, any> {
+interface FooterButtonProps {
+  label: string;
+  className: string;
+  iconUrl: string;
+  onClick?: () => any;
+}
+  
+const FooterButton: React.StatelessComponent<FooterButtonProps> = ({ 
+  label, 
+  className, 
+  iconUrl, 
+  onClick,
+}) => (
+  <a className={`footerButton ${className}`} onClick={onClick} >
+    <img className="footerButtonIcon" src={iconUrl} alt={label} />
+    <span className="footerButtonLabel">{label}</span>
+  </a>  
+);
 
+interface FooterProps {
+  onReloadButtonClick: () => any;
+}
+
+class Footer extends React.Component<FooterProps, any> {
   public render() {
     return (
       <footer>
-        <a>피드백</a>
-        <a>명언 제보</a>
-        <p>© 2015 CHRM</p>
-        <a>limchrm</a>
+        <div className="footerButtonWrapper">
+          <FooterButton
+             label="새로고침" className="refresh" iconUrl={require('../images/ic_refresh.svg')}
+             onClick={this.props.onReloadButtonClick} 
+          />
+          <FooterButton 
+            label="명언 제보" className="suggest" iconUrl={require('../images/ic_suggest.svg')}
+          />
+        </div>
+        <p className="footerCopyright">© 2016 CHRM</p>
       </footer>
     );
   }
 }
 
 export default Footer;
-
-// <footer>
-// 		<a class="btn btn_feedback track" ng-click="feedback='open'"><img src="img/ic_feedback.svg"><span>피드백</span></a>
-// 		<a class="btn btn_suggest" href="{{your.feeadback.url}}" target="_blank"><img src="img/ic_suggest.svg"><span>명언 제보</span></a>
-// 		<a class="btn btn_setting" ng-click="open=true"><img src="img/ic_setting.svg"></a>
-// 		<p>© 2015 CHRM<a class="profile" href="http://fb.me/limchrm" target="_blank">limchrm</a></p>
-// 	</footer>

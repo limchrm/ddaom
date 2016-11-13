@@ -1,0 +1,58 @@
+#quote {
+  background: {
+    color: $color_mook;
+    position: center;
+    size: cover;
+  }
+  height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.quoteCard {
+	background: white;
+	display: inline-block;
+	position: relative;
+	padding: 3rem 2.5rem 1.75rem;
+	color: $color_mook;
+	text-align: center;
+	border: 0.5rem solid transparent;
+	transition: .5s all ease-in-out;
+	animation: flip 1.2s;
+	z-index: 15;
+}
+.quoteMark, .quoteText, .quoteFrom {
+  font-family: 'Nanum Myeongjo', serif;
+  letter-spacing: -0.025em;
+  color: $color_mook;
+}
+.quoteMark {
+  font-size: 10rem;
+  line-height: 1em;
+  margin-left: -0.75rem;
+}
+.quoteText {
+  font-size: 2.25rem;
+  line-height: 1.5em;
+  margin-top: -6rem;
+}
+.quoteFrom {
+  border-top: 1px solid;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.quoteFrom1 {
+  font-size: 1rem;
+}
+.quoteFrom2 {
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  display: inline-block;
+}

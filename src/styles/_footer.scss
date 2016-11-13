@@ -1,0 +1,42 @@
+footer {
+  @include fixedComponent;
+  bottom: 2rem;
+}
+.footerButton, .footerButtonIcon, .footerButtonLabel {
+	transition: 0.3s all ease;
+}
+.footerButtonWrapper {
+  position: fixed;
+  left: 1rem;
+  bottom: 1.25rem;
+  z-index: 11;
+  
+}
+.footerButton {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1em;
+  cursor: pointer;
+  color: white;
+  &:hover {
+    .footerButtonIcon {
+      transform: scale(1.1);
+    }
+    .footerButtonLabel {
+      opacity: 1;
+      transform: translateX(0.5rem);
+    }
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+.footerButtonLabel {
+  font-size: 0.75rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+}
+.footerCopyright {
+  font-size: 0.25rem;
+  font-weight: bold;
+}
