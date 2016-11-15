@@ -1,7 +1,7 @@
 @import '_reset';
 @import '_colors';
 
-@import '../components/Clock/_clock';
-@import '../components/Quote/_quote';
-@import '../components/Config/_config';
-@import '../components/Footer/_footer';
+@import '_clock';
+@import '_quote';
+@import '_config';
+@import '_footer';

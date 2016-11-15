@@ -3,10 +3,10 @@ import * as ReactDOM from "react-dom";
 import * as axios from 'axios';
 import './styles/style.scss';
 
-import Clock from "./components/Clock/Clock";
-import Quote from "./components/Quote/Quote";
-import Config from "./components/Config/Config";
-import Footer from "./components/Footer/Footer";
+import Clock from "./components/Clock";
+import Quote from "./components/Quote";
+import Config from "./components/Config";
+import Footer from "./components/Footer";
 
 const root = document.getElementById("ddaom");
 
