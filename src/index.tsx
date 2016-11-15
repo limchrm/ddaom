@@ -3,10 +3,10 @@ import * as ReactDOM from "react-dom";
 import * as axios from 'axios';
 import './styles/style.scss';
 
-import Clock from "./components/Clock";
-import Quote from "./components/Quote";
-import Setting from "./components/Setting";
-import Footer from "./components/Footer";
+import Clock from "./components/Clock/Clock";
+import Quote from "./components/Quote/Quote";
+import Config from "./components/Config/Config";
+import Footer from "./components/Footer/Footer";
 
 const root = document.getElementById("ddaom");
 
@@ -61,13 +61,13 @@ class Ddaom extends React.Component<any, DdaomState> {
       <div>
         <Clock />
         {this.state.picked && (
-          <Quote
+          <Quote  
             text={this.state.picked.gsx$said.$t} 
             from1={this.state.picked.gsx$from.$t}
             from2={this.state.picked.gsx$as.$t}
           />
         )}
-        {/* <Setting /> */}
+        <Config />
         <Footer 
           onReloadButtonClick={this.handleReload} 
         />

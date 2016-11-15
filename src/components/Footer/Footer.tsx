@@ -30,11 +30,11 @@ class Footer extends React.Component<FooterProps, any> {
       <footer>
         <div className="footerButtonWrapper">
           <FooterButton
-             label="새로고침" className="refresh" iconUrl={require('../images/ic_refresh.svg')}
+             label="새로고침" className="refresh" iconUrl={require('../../images/ic_refresh.svg')}
              onClick={this.props.onReloadButtonClick} 
           />
           <FooterButton 
-            label="명언 제보" className="suggest" iconUrl={require('../images/ic_suggest.svg')}
+            label="명언 제보" className="suggest" iconUrl={require('../../images/ic_suggest.svg')}
           />
         </div>
         <p className="footerCopyright">© 2016 CHRM</p>

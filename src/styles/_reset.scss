@@ -12,6 +12,13 @@ body {
   height: 100%;
   background: #222 url('../images/img_placeholder_ddaom.svg') no-repeat center;
 }
+#ddaom > div {
+  background: {
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  }
+}
 
 /* MIXINS */
 @mixin fixedComponent {
