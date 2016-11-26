@@ -28,8 +28,8 @@ class Config extends React.Component<any, any> {
         <input type="number" value="40"/>
 
         <h3 className="configLabel">정렬</h3>
-        <img className="setting-align-left" src="#" alt="left"/>
-        <img className="setting-align-center" src="#" alt="center"/>
+        <img className="setting-align-left" src={require('../images/ic_align_left.svg')} alt="left"/>
+        <img className="setting-align-center" src={require('../images/ic_align_center.svg')} alt="center"/>
         
         <label htmlFor="setting-show-time">시간</label>
         <input id="setting-show-time" type="checkbox"/>
